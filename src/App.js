@@ -128,7 +128,7 @@ function App() {
                 <div className="card-body">
                   <div className="input-group mb-3">
                     <span className="input-group-text" id="basic-addon1">Nombre: </span>
-                    <input value={nombre} onChange={(event) => setNombre(event.target.value.trim())} type="text" className="form-control" placeholder="Nombre" />
+                    <input value={nombre} onChange={(event) => setNombre(event.target.value)} type="text" className="form-control" placeholder="Nombre" />
                   </div>
                   <div className="input-group mb-3">
                     <span className="input-group-text" id="basic-addon1">Edad: </span>
