@@ -22,6 +22,13 @@ function App() {
         text: "Por favor, ingresa todos los datos antes de registrar.",
       });
       return;
+    }else if (usuarios.find(usuarios => usuarios.correo === correo)) {
+      Swal.fire({
+        icon: "warning",
+        title: "¡Correo ya registrado!",
+        text: "El correo ingresado ya se encuentra registrado.",
+      });
+      return;
     }
 
     const nuevoUsuario = {
