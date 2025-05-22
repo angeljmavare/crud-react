@@ -128,15 +128,15 @@ function App() {
                 <div className="card-body">
                   <div className="input-group mb-3">
                     <span className="input-group-text" id="basic-addon1">Nombre: </span>
-                    <input value={nombre} onChange={(event) => setNombre(event.target.value)} type="text" className="form-control" placeholder="Nombre" />
+                    <input value={nombre} onChange={(event) => setNombre(event.target.value.trim())} type="text" className="form-control" placeholder="Nombre" />
                   </div>
                   <div className="input-group mb-3">
                     <span className="input-group-text" id="basic-addon1">Edad: </span>
-                    <input value={edad} onChange={(event) => setEdad(event.target.value)} type="number" className="form-control" placeholder="Edad" />
+                    <input value={edad} onChange={(event) => setEdad(event.target.value.trim())} type="number" className="form-control" placeholder="Edad" />
                   </div>
                   <div className="input-group mb-3">
                     <span className="input-group-text" id="basic-addon1">Correo: </span>
-                    <input value={correo} onChange={(event) => setCorreo(event.target.value)} type="text" className="form-control" placeholder="Correo" />
+                    <input value={correo} onChange={(event) => setCorreo(event.target.value.trim())} type="text" className="form-control" placeholder="Correo" />
                   </div>
 
                 </div>
@@ -161,9 +161,9 @@ function App() {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Buscar usuario..."
+                placeholder="Buscar usuario por correo..."
                 value={search}
-                onChange={(event) => setSearch(event.target.value)}
+                onChange={(event) => setSearch(event.target.value.trim())}
               />
             </div>
 
