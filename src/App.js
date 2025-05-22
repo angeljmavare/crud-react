@@ -107,7 +107,7 @@ function App() {
   };
 
   const usuariosFiltrados = usuarios.filter((usuario) =>
-    usuario.nombre.toLowerCase().includes(search.toLowerCase())
+    usuario.correo.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
